@@ -103,13 +103,43 @@
   .file-table th,
   .file-table td {
     padding: 8px;
-    border: 1px solid #ddd;
+    border: none;
     text-align: left;
   }
   .file-table th {
     background-color: rgba(213,214,246,1.000);
-    border-left: 3px solid;
+    border-left: 2px solid;
+    font-weight: normal;
   }
+
+  .file-table-leer{
+    height: 20px;
+  }
+
+  .file-table th:nth-child(2),
+  .file-table td:nth-child(2) {
+  width: 35%;
+  }
+
+  .file-table th:nth-child(5),
+  .file-table td:nth-child(5) {
+  width: 25%;
+  }
+  .file-table th:nth-child(4),
+  .file-table td:nth-child(4) {
+  width: 20%;
+  }
+  .file-table th:nth-child(3),
+  .file-table td:nth-child(3) {
+  width: 15%;
+  }
+  .file-table th:first-child,
+  .file-table td:first-child {
+  width: 5%;
+  border: none;
+  background-color: white;
+  }
+
   input{
     accent-color: rgba(213,214,246,1.000);
   }
