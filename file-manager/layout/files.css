@@ -100,9 +100,14 @@
     border-collapse: collapse;
   }
 
-  .file-table th,
-  .file-table td {
+  .file-table th {
     padding: 8px;
+    border: none;
+    text-align: left;
+  }
+  .file-table td{
+    padding-top: 0px;
+    padding-bottom: 0px;;
     border: none;
     text-align: left;
   }
@@ -118,24 +123,42 @@
 
   .file-table th:nth-child(2),
   .file-table td:nth-child(2) {
-  width: 35%;
+  width: 38%;
   }
 
-  .file-table th:nth-child(5),
-  .file-table td:nth-child(5) {
-  width: 25%;
+  .file-table th:nth-child(8),
+  .file-table td:nth-child(8) {
+  width: 24%;
+  }
+  .file-table th:nth-child(6),
+  .file-table td:nth-child(6) {
+  width: 19%;
   }
   .file-table th:nth-child(4),
   .file-table td:nth-child(4) {
-  width: 20%;
-  }
-  .file-table th:nth-child(3),
-  .file-table td:nth-child(3) {
-  width: 15%;
+  width: 10%;
   }
   .file-table th:first-child,
   .file-table td:first-child {
-  width: 5%;
+  width: 3%;
+  border: none;
+  background-color: white;
+  }
+  .file-table th:nth-child(3),
+  .file-table td:nth-child(3) {
+  width: 2%;
+  border: none;
+  background-color: white;
+  }
+  .file-table th:nth-child(5),
+  .file-table td:nth-child(5) {
+  width: 2%;
+  border: none;
+  background-color: white;
+  }
+  .file-table th:nth-child(7),
+  .file-table td:nth-child(7) {
+  width: 2%;
   border: none;
   background-color: white;
   }
