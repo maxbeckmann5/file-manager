@@ -1,0 +1,171 @@
+.teams-box{
+    width: 1000px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.background-colour {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(220, 220, 220, 1);
+}
+
+.horizontal-line {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 90%;
+    border-top: 1px solid #ccc;
+}
+h1{
+    position: absolute;
+    left: 5%;
+    top: 6.5%;
+    margin: 0;
+    font-size: 24px;
+    font-style: Roboto, sans-serif;
+    font-weight: normal;
+}
+
+.manage-teams{
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    right: 18%;
+    top: 5%;
+    background-color: rgba(213,214,246,1.000);
+    border: none;
+    font-size: 14px;
+}
+.team-open{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    left: 5%;
+    top: 18%;
+    background-color: rgba(107,97,203,1.000);
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+.team-closed{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    left: 18%;
+    top: 18%;
+    background-color: rgba(213,214,246,1.000);
+    border: none;
+    font-size: 14px;
+}
+.team-closed2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    position: absolute;
+    left: 31%;
+    top: 18%;
+    background-color: rgba(213,214,246,1.000);
+    border: none;
+    font-size: 14px;
+}
+.info-box{
+    width: 250px;
+    height: 320px;
+    background-color: rgba(213,214,246,1.000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+}
+.info-box2{
+    width: 250px;
+    height: 320px;
+    background-color: rgba(213,214,246,1.000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: center;
+    bottom: 5%;
+}
+.info-box3{
+    width: 250px;
+    height: 320px;
+    background-color: rgba(213,214,246,1.000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.team-icon{
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    
+}
+.team-icon2{
+    position: absolute;
+    left: center;
+    top: 35%;
+    width: 250px;
+    height: 50px;
+}
+.team-icon3{
+    position: absolute;
+    right: 5%;
+    top: 35%;
+    width: 250px;
+    height: 50px;
+}
+.access-icon{
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    
+}
+.change-icon{
+    position: absolute;
+    left: 5%;
+    top: 35%;
+    
+}
+.text-box1{
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    font-size: 20px;
+}
+.text-box2{
+    position: absolute;
+    left: 42%;
+    top: 35%;
+    font-size: 20px;
+}
+.text-box3{
+    position: absolute;
+    left: 75%;
+    top: 35%;
+    font-size: 20px;
+}
+
+
