@@ -97,7 +97,7 @@ h1{
     position: absolute;
     right: 18%;
     top: 5%;
-    background-color: rgba(213,214,246,1.000);
+    background-color: var(--secondary-color);
     border: none;
     font-size: 14px;
 }

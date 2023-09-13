@@ -7,7 +7,7 @@
     position: absolute;
     left: 5%;
     top: 5%;
-    background-color: rgba(213,214,246,1.000);
+    background-color: var(--secondary-color);
     border: none;
     font-size: 14px;
 }
@@ -20,7 +20,7 @@
     position: absolute;
     left: 15%;
     top: 5%;
-    background-color: rgba(213,214,246,1.000);
+    background-color: var(--secondary-color);
     border: none;
     font-size: 14px;
 }
@@ -41,7 +41,7 @@
 }
 
 .search{
-    background-color: rgba(213,214,246,1.000);
+    background-color: var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@
     text-align: left;
   }
   .file-table th {
-    background-color: rgba(213,214,246,1.000);
+    background-color: var(--secondary-color);
     border-left: 2px solid;
     font-weight: normal;
   }
@@ -164,5 +164,5 @@
   }
 
   input{
-    accent-color: rgba(213,214,246,1.000);
+    accent-color: var(--secondary-color);
   }
