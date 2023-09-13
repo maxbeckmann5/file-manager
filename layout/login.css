@@ -41,6 +41,7 @@
     border: none;
     background-color: transparent;
     color: black;
+    padding-left: 10px;
     box-sizing: border-box;
 }
 .password-box{
@@ -59,6 +60,7 @@
     border: none;
     background-color: transparent;
     color: black;
+    padding-left: 10px;
     box-sizing: border-box;
 }
 .continue{
