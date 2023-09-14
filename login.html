@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>file-manager-login</title>
-    <link rel='stylesheet' href='layout/login.css'/>
     <link rel='stylesheet' href='style.css'/>
 </head>
 <body>
@@ -12,14 +11,14 @@
         <img src="images/file.png" alt="file">
     </div>
     <div class="content-container">
-        <h1>Welcome</h1>
-        <p>Please login to proceed.</p>
+        <h1 id="welcome">Welcome</h1>
+        <p id="text">Please login to proceed.</p>
     </div>
-    <div class="user-box">
+    <div class="user-box" id="user">
         <img src="images/user.png" alt="user icon" class="input-icon">
         <input type="text" placeholder="Username or Email-Adress">
     </div>
-    <div class="password-box">
+    <div class="user-box" id="password">
         <img src="images/password.png" alt="password icon" class="input-icon">
         <input type="password" placeholder="Password">
     </div>
@@ -36,6 +35,5 @@
         </div>
     </a>
 </div>
-
 </body>
 </html>
