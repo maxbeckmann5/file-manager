@@ -533,15 +533,15 @@ p {
     padding-right: 15px;
 }
 
-.function-box-text-share {
+#function-box-text-share {
     padding-right: 57px;
 }
 
-.function-box-text-new {
+#function-box-text-new {
     padding-right: 55px;
 }
 
-.function-box-text-refresh {
+#function-box-text-refresh {
     padding-right: 42px;
 }
 
