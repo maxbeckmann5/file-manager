@@ -1,3 +1,7 @@
+:root{
+    --primary-color: rgba(107,97,203,1.000);
+    --secondary-color: rgba(213,214,246,1.000);
+}
 body{
     display: flex;
     justify-content: center;
@@ -18,13 +22,14 @@ body{
 .continue{
     grid-row: 17 /span 2;
     grid-column: 2 / span 8;
-    background-color: rgba(220, 220, 220, 1);
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .username{
-    background-color: rgba(220, 220, 220, 1);
+    background-color: var(--secondary-color);
     padding: 30px;
     display: flex;
     justify-content: center;
@@ -40,16 +45,64 @@ body{
 }
 .username input[type="text"],
 .username input[type="password"]{
-    width: 90%;
+    width: 100%;
     height: 40px;
     border: none;
     background-color: transparent;
     color: black;
     padding-left: 10px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 #continue{
     padding:0;
     margin: 0;
     font-size: 16px;
+}
+#input-user{
+    grid-row: 9 /span 2;
+    grid-column: 2 /span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#input-password{
+    grid-row: 12 /span 2;
+    grid-column: 2 /span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#forgot-password{
+    grid-row: 14 /span 1;
+    grid-column: 2 /span 8;
+    color: rgba(0, 0, 0, 0.47);
+    font-size: 16px;
+}
+a{
+    color:rgba(0, 0, 0, 0.47);
+}
+.headline{
+    grid-row: 5 /span 1;
+    grid-column: 4/span 6;
+}
+#welcome {
+    font-weight: normal;
+    font-size: 32px;
+    margin: 0;
+}
+.headline2{
+    grid-row: 6 /span 1;
+    grid-column: 4/span 6;
+}
+#welcome2 {
+    font-weight: normal;
+    font-size: 16px;
+    margin: 0;
+}
+.image-container{
+    grid-row: 5 /span 2;
+    grid-column: 2/span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
