@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>file-manager-login</title>
-    <link rel='stylesheet' href='style.css'/>
+    <link rel='stylesheet' href='style.css'>
 </head>
 <body>
 <div class="login-box">
     <div class="image-container">
         <img src="images/file.png" alt="file">
     </div>
-    <div class="content-container">
-        <h1 id="welcome">Welcome</h1>
-        <p id="text">Please login to proceed.</p>
+    <div class="headline">
+        <p id="welcome">Welcome</p>
     </div>
-    <div class="user-box" id="user">
-        <img src="images/user.png" alt="user icon" class="input-icon">
-        <input type="text" placeholder="Username or Email-Adress">
+    <div class="headline2">
+        <p id="welcome2">Please login to proceed.</p>
     </div>
-    <div class="user-box" id="password">
-        <img src="images/password.png" alt="password icon" class="input-icon">
+    <div class="username" id="user">
+        <input type="text" placeholder="Username or E-Mail">
+    </div>
+    <div id="input-user">
+        <img src="images/user.png" alt="user icon">
+    </div>
+    <div class="username" id="password">
         <input type="password" placeholder="Password">
     </div>
-    <a class="forgot" href="https://support.google.com/accounts/answer/41078">
-        <div class="forgot-password">
+    <div id="input-password">
+        <img src="images/password.png" alt="password icon">
+    </div>
+    <div id="forgot-password">
+        <a href="https://support.google.com/accounts/answer/41078">
             <p>
                 Forgot password?
             </p>
-        </div>
-    </a>
-    <a class="continue" href="teams.html">
-        <div class="continue-box">
-            <div class="continue-text">Continue</div>
-        </div>
-    </a>
+        </a>
+    </div>
+    <div class="continue">
+        <p id="continue">
+            Continue
+        </p>
+    </div>
 </div>
 </body>
 </html>
