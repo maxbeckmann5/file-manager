@@ -7,108 +7,19 @@
     </head>
 <body>
     <div class="teams-box">
-        <button class="button1" id="manage-teams">back to teams</button>
+        <button class="manage-teams">back to teams</button>
         <button class="logout">Logout</button>
         <div class="logout-img">
             <img src="images/logout.png" class="logout-img">
         </div>
-        <div id="hl1"></div>
-        <h1 id="headline">Manage your teams</h1>
+        <div class="horizontal-line"></div>
+        <div id="headline">
+            <h1>Manage your teams</h1>
+        </div>
         <button class="button1" id="team-open">Team 1</button>
         <button class="button1" id="team-closed">Team 2</button>
         <button class="button1" id="team-closed2"><img src="images/plus.png"></button>
-        <div class="info-box" id="ib1">
-            <div class="description">Team admin</div>
-            <div class="icon-name">
-                <img src="images/user-black.png" class="icon-name-img">
-                <div class="name">
-                    name, first name (You)                    
-                </div>
-            </div>
-            <div class="description-team">Team members</div>
-            <div class="icon-team" id="it1">
-                <img src="images/user-black.png" class="icon-team-img">
-                <div class="name-team">
-                    name, first name (You)
-                </div>
-            </div>
-            <div class="icon-team" id="it2">
-                <img src="images/user-black.png" class="icon-team-img">
-                <div class="name-team">
-                    name, first name (You)
-                </div>
-            </div>
-            <div class="icon-team" id="it3">
-                <img src="images/user-black.png" class="icon-team-img">
-                <div class="name-team">
-                    name, first name (You)
-                </div>
-            </div>
-            <div class="icon-team" id="it4">
-                <img src="images/user-black.png" class="icon-team-img">
-                <div class="name-team">
-                    name, first name (You)
-                </div>
-            </div>
-        </div>
-        <div class="info-box" id="ib2">
-            <div class="change" id="change1">
-                Yesterday, 29.07.2023
-            </div>
-            <div class="change-description" id="change-description1">
-                file1.pdf (added)
-                <div class="time">8.54am</div>
-            </div>
-            <div class="change" id="change2">
-                Yesterday, 29.07.2023
-            </div>
-            <div class="change-description" id="change-description2">
-                file2.pdf (added)
-                <div class="time">7.37am</div>
-            </div>
-            <div class="change-description" id="change-description3">
-                folder5 (deleted)
-                <div class="time">3.10pm</div>
-            </div>
-            <div class="change-description" id="change-description4">
-                table.xlsx (changed)
-                <div class="time">10.11am</div>
-            </div>
-            <div class="change-description" id="change-description5">
-                table2.xlsx (added)
-                <div class="time">9.55am</div>
-            </div>
-            <div class="change-description" id="change-description6">
-                file3.pdf (deleted)
-                <div class="time">6.22pm</div>
-            </div>
-        </div>
-        <div class="info-box" id="ib3">
-            <div class="change" id="change1">
-                Yesterday, 29.07.2023
-            </div>
-            <div class="icon-name">
-                <img src="images/user-black.png" class="icon-name-img">
-                <div class="name">
-                    name, first name (open)
-                </div>
-            </div>
-            <div class="change" id="change3">
-                Wednesday, 26.07.2023
-            </div>
-            <div class="icon-team" id="it2">
-                <img src="images/user-black.png" class="icon-name-img">
-                <div class="name">
-                    name, first name (accepted)
-                </div>
-            </div>
-            <button class="deny">
-                deny
-            </button>
-            <button class="accept">
-                accept
-            </button>
-        </div>
+        
         <img src="images/team-black.png" class="team-icon" id="ti1">
         <div class="text-box" id="tb1">Your team (Team 1)</div>
         <div class="team-icon" id="ti2">
@@ -119,6 +30,130 @@
             <img src="images/open-lock.png">
         </div>
         <div class="text-box" id="tb3">Access requests</div>
+
+
+
+        <div class="info-box" id="ib1">
+            <table class="manage-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Team admin</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/user-black.png" class="icon-manage"></td>
+                        <td>name, first name (You)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="manage-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Team members</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/user-black.png" class="icon-manage"></td>
+                        <td>name, first name</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/user-black.png" class="icon-manage"></td>
+                        <td>name, first name</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/user-black.png" class="icon-manage"></td>
+                        <td>name, first name</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/user-black.png" class="icon-manage"></td>
+                        <td>name, first name</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="info-box" id="ib2">
+            <table class="manage-table" id="clms3">
+                <thead>
+                    <tr>
+                        <th colspan="2">Yesterday, 17.09.2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>file1.pdf</td>
+                        <td>(added)</td>
+                        <td>8.54am</td>
+                    </tr>
+                    <tr>
+                        <td>file2.pdf</td>
+                        <td>(deleted)</td>
+                        <td>7.39am</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="manage-table" id="clms3">
+                <thead>
+                    <tr>
+                        <th colspan="2">Sunday, 10.09.2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>file3.pdf</td>
+                        <td>(added)</td>
+                        <td>11.01pm</td>
+                    </tr>
+                    <tr>
+                        <td>file4.pdf</td>
+                        <td>(changed)</td>
+                        <td>09.33am</td>
+                    </tr>
+                    <tr>
+                        <td>file2.pdf</td>
+                        <td>(added)</td>
+                        <td>05.41am</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="info-box" id="ib3">
+            <table class="manage-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Yesterday,17.09.2023</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/user-black.png" class="icon-manage"></td>
+                        <td>name, first name (open)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="acc-den">
+                <button id="accept">accept</button>
+                <button id="deny">deny</button>
+            </div>
+            <table class="manage-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Last week</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/user-black.png" class="icon-manage"></td>
+                        <td>name, first name (accepted)</td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/user-black.png" class="icon-manage"></td>
+                        <td>name, first name (denied)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </body>
 </html>
