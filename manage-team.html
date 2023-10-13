@@ -2,157 +2,189 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>file-manager-teams</title>
-    <link rel="stylesheet" href="style.css">
-    </head>
+    <title>file-manager-manage-teams</title>
+    <link rel='stylesheet' href="style.css">
+</head>
 <body>
-    <div class="teams-box">
-        <button class="manage-teams">back to teams</button>
-        <button class="logout">Logout</button>
-        <div class="logout-img">
-            <img src="images/logout.png" class="logout-img">
-        </div>
-        <div class="horizontal-line"></div>
-        <div id="headline">
-            <h1>Manage your teams</h1>
-        </div>
-        <button class="button1" id="team-open">Team 1</button>
-        <button class="button1" id="team-closed">Team 2</button>
-        <button class="button1" id="team-closed2"><img src="images/plus.png"></button>
-        
-        <img src="images/team-black.png" class="team-icon" id="ti1">
-        <div class="text-box" id="tb1">Your team (Team 1)</div>
-        <div class="team-icon" id="ti2">
-            <img src="images/clock.png">
-        </div>
-        <div class="text-box" id="tb2">Last changes</div>
-        <div class="team-icon" id="ti3">
-            <img src="images/open-lock.png">
-        </div>
-        <div class="text-box" id="tb3">Access requests</div>
-
-
-
-        <div class="info-box" id="ib1">
-            <table class="manage-table">
-                <thead>
-                    <tr>
-                        <th colspan="2">Team admin</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/user-black.png" class="icon-manage"></td>
-                        <td>name, first name (You)</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="manage-table">
-                <thead>
-                    <tr>
-                        <th colspan="2">Team members</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/user-black.png" class="icon-manage"></td>
-                        <td>name, first name</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/user-black.png" class="icon-manage"></td>
-                        <td>name, first name</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/user-black.png" class="icon-manage"></td>
-                        <td>name, first name</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/user-black.png" class="icon-manage"></td>
-                        <td>name, first name</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="info-box" id="ib2">
-            <table class="manage-table" id="clms3">
-                <thead>
-                    <tr>
-                        <th colspan="2">Yesterday, 17.09.2023</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>file1.pdf</td>
-                        <td>(added)</td>
-                        <td>8.54am</td>
-                    </tr>
-                    <tr>
-                        <td>file2.pdf</td>
-                        <td>(deleted)</td>
-                        <td>7.39am</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="manage-table" id="clms3">
-                <thead>
-                    <tr>
-                        <th colspan="2">Sunday, 10.09.2023</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>file3.pdf</td>
-                        <td>(added)</td>
-                        <td>11.01pm</td>
-                    </tr>
-                    <tr>
-                        <td>file4.pdf</td>
-                        <td>(changed)</td>
-                        <td>09.33am</td>
-                    </tr>
-                    <tr>
-                        <td>file2.pdf</td>
-                        <td>(added)</td>
-                        <td>05.41am</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div class="info-box" id="ib3">
-            <table class="manage-table">
-                <thead>
-                    <tr>
-                        <th colspan="2">Yesterday,17.09.2023</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/user-black.png" class="icon-manage"></td>
-                        <td>name, first name (open)</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="acc-den">
-                <button id="accept">accept</button>
-                <button id="deny">deny</button>
+    <div class="box-menu">
+        <div class="nav-bar-teams" id="nav-between">
+            <div style="flex:2;">
+                <h1>Manage your teams</h1>
             </div>
-            <table class="manage-table">
-                <thead>
-                    <tr>
-                        <th colspan="2">Last week</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><img src="images/user-black.png" class="icon-manage"></td>
-                        <td>name, first name (accepted)</td>
-                    </tr>
-                    <tr>
-                        <td><img src="images/user-black.png" class="icon-manage"></td>
-                        <td>name, first name (denied)</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="logout-img" id="margin-team">
+                <div>
+                    back to teams
+                </div>
+            </div>
+            <div class="logout-img">
+                <img src="images/logout.png" id="logout">
+                <div>
+                    Logout
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-line" id="horizontal-teams"></div> 
+        <div class="nav-bar-teams" id="selection">
+            <div class="logout-img" id="selection1">
+                <div>
+                    Team1
+                </div>
+            </div>
+            <div class="logout-img" id="selection2">
+                <div>
+                    Team2
+                </div>
+            </div>
+            <div class="logout-img" id="plus-team">
+                <img src="images/plus.png">
+            </div>
+        </div>
+        <div class="box-manage">
+            <div class="box-manage2">
+                <div class="manage-description">
+                    <img src="images/team-black.png">
+                    <div class="manage-description-text">
+                        <h1 id="manage-size">Your team (Team1)</h1>
+                    </div>
+                </div>
+                <div class="box-manage-content">
+                    <table class="manage-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Team admin</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/user-black.png" class="icon-manage"></td>
+                                <td>name, first name (You)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="manage-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Team members</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/user-black.png" class="icon-manage"></td>
+                                <td>name, first name</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/user-black.png" class="icon-manage"></td>
+                                <td>name, first name</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/user-black.png" class="icon-manage"></td>
+                                <td>name, first name</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/user-black.png" class="icon-manage"></td>
+                                <td>name, first name</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="box-manage2">
+                <div class="manage-description">
+                    <img src="images/clock.png">
+                    <div class="manage-description-text">
+                        <h1 id="manage-size">Last changes</h1>
+                    </div>
+                </div>
+                <div class="box-manage-content">
+                        <table class="manage-table" id="clms3">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Yesterday, 17.09.2023</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file1.pdf</td>
+                                    <td>(added)</td>
+                                    <td>8.54am</td>
+                                </tr>
+                                <tr>
+                                    <td>file2.pdf</td>
+                                    <td>(deleted)</td>
+                                    <td>7.39am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="manage-table" id="clms3">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Sunday, 10.09.2023</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>file3.pdf</td>
+                                    <td>(added)</td>
+                                    <td>11.01pm</td>
+                                </tr>
+                                <tr>
+                                    <td>file4.pdf</td>
+                                    <td>(changed)</td>
+                                    <td>09.33am</td>
+                                </tr>
+                                <tr>
+                                    <td>file2.pdf</td>
+                                    <td>(added)</td>
+                                    <td>05.41am</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+            </div>
+            <div class="box-manage2">
+                <div class="manage-description">
+                    <img src="images/open-lock.png">
+                    <div class="manage-description-text">
+                        <h1 id="manage-size">Access requests</h1>
+                    </div>
+                </div>
+                <div class="box-manage-content">
+                    <table class="manage-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Yesterday,17.09.2023</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/user-black.png" class="icon-manage"></td>
+                                <td>name, first name (open)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="acc-den">
+                        <button id="accept">accept</button>
+                        <button id="deny">deny</button>
+                    </div>
+                    <table class="manage-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">Last week</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="images/user-black.png" class="icon-manage"></td>
+                                <td>name, first name (accepted)</td>
+                            </tr>
+                            <tr>
+                                <td><img src="images/user-black.png" class="icon-manage"></td>
+                                <td>name, first name (denied)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </body>

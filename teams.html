@@ -3,29 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>file-manager-teams</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel='stylesheet' href="style.css">
 </head>
 <body>
-    <div class="teams-box">
-        <button class="manage-teams">Manage Teams</button>
-        <button class="logout">Logout</button>
-        <div class="logout-img">
-            <img src="images/logout.png" class="logout-img">
+    <div class="box-menu">
+        <div class="nav-bar-teams">
+            <div class="logout-img" id="margin-team">
+                <div>
+                    Manage teams
+                </div>
+            </div>
+            <div class="logout-img">
+                <img src="images/logout.png" id="logout">
+                <div>
+                    Logout
+                </div>
+            </div>
         </div>
-        <div class="horizontal-line"></div>
-        <div class="header-teams">
+        <div class="horizontal-line" id="horizontal-teams"></div> 
+        <div id="header-teams">
             <h1>Please select your team</h1>
         </div>
-        <img src="images/team-black.png" alt="team icon" class="team-icon-team" id="team1-img">
-        <div class="text-box-grey" id="team1">Team 1</div>
-        <img src="images/team-grey.png" alt="team icon" class="team-icon-team" id="team2-img">
-        <div class="text-box-grey" id="team2">Team 2</div>
-        <img src="images/team-grey.png" alt="team icon" class="team-icon-team" id="team3-img">
-        <div class="text-box-grey" id="team3">Team 3</div>
-        <img src="images/team-grey.png" alt="team icon" class="team-icon-team" id="team4-img">
-        <div class="text-box-grey" id="team4">Team 4</div>
-        <img src="images/plus.png" alt="team icon" class="team-icon-team" id="new-team-img">
-        <div class="text-box-grey" id="new-team">add new team</div>
+        <div>
+            <div class="team-select" id="top-select">
+                <img src="images/team-black.png">
+                <div class="team-select-text" id="team-select-text-main">Team 1</div>
+            </div>
+            <div class="team-select">
+                <img src="images/team-grey.png">
+                <div class="team-select-text">Team 2</div>
+            </div>
+            <div class="team-select">
+                <img src="images/team-grey.png">
+                <div class="team-select-text">Team 3</div>
+            </div>
+            <div class="team-select">
+                <img src="images/team-grey.png">
+                <div class="team-select-text">Team 4</div>
+            </div>
+            <div class="team-select">
+                <img src="images/plus.png">
+                <div class="team-select-text" id="team-select-text-main">add new team</div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

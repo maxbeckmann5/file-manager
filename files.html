@@ -2,85 +2,110 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>file-manager-files-team1</title>
+    <title>file-manager</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="background-colour">
-    <div class="teams-box">
-        <button class="logout">Logout</button>
-        <div class="logout-img">
-            <img src="images/logout.png" class="logout-img">
+<body>
+    <div class="box-menu">
+        <div class="nav-bar">
+            <nav>
+                <ul>
+                    <li>
+                        <button class="logout" id="team">Teams</button>
+                    </li>
+                    <li id="arrow"><img src="images/Vector 1.png"></li>
+                    <li>
+                        <button class="logout" id="team">Team 1</button>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logout-img">
+                    <img src="images/logout.png" id="logout">
+                <div>
+                    Logout
+                </div>
+            </div>
         </div>
-        <button class="button-nav">Teams</button>
-        <button class="button-nav button-nav1">Team 1</button>
-        <img src="images/Vector 1.png" class="arrow">
-        <input type="text" placeholder="Search" class="search">
-        <img src="images/search.png" class="search-icon">
-        <div class="function-box" id="refresh">refresh</div>
-        <div class="function-box" id="new">new folder</div>
-        <div class="function-box" id="share">share</div>
-        <div class="function-box" id="upload">upload</div>
-        <div class="horizontal-line" id="horizontal-line1"></div>
-        <div class="function-img" id="refresh-img">
-            <img src="images/refresh.png">
+        <div class="nav-bar" id="search">
+            <nav style="flex:2;">
+                <ul>
+                    <li id="search-input">
+                        <div id="search-box">
+                            <img src="images/search.png" id="search-img">
+                            <input type="text" placeholder="Search">
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+            <div id="container">
+                <div id="column" class="button">
+                    <div><img src="images/refresh.png"></div>
+                    <div>refresh</div>
+                </div>
+                <div id="column" class="button">
+                    <div><img src="images/new-folder.png"></div>
+                    <div>new folder</div>
+                </div>
+                <div id="column" class="button">
+                    <div><img src="images/share.png"></div>
+                    <div>share</div>
+                </div>
+                <div id="column" class="button">
+                    <div><img src="images/upload.png"></div>
+                    <div>upload</div>
+                </div>
+            </div>
         </div>
-        <div class="function-img" id="new-img">
-            <img src="images/new-folder.png">
+        <div class="horizontal-line"></div>
+        <div class="table-box" id="table">
+            <table class="file-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>name</th>
+                        <th></th>
+                        <th>size</th>
+                        <th></th>
+                        <th>last modified</th>
+                        <th></th>
+                        <th>type</th>
+                    </tr>
+                    <tr class="file-table-leer"></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>file1.pdf</td>
+                        <td></td>
+                        <td>100KB</td>
+                        <td></td>
+                        <td>13.07.2023</td>
+                        <td></td>
+                        <td>PDF-Document</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>file2.pdf</td>
+                        <td></td>
+                        <td>30KB</td>
+                        <td></td>
+                        <td>20.05.2023</td>
+                        <td></td>
+                        <td>PDF-Dokument</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>folder1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>07.08.2023</td>
+                        <td></td>
+                        <td>Folder</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
-        <div class="function-img" id="share-img">
-            <img src="images/share.png">
-        </div>
-        <div class="function-img" id="upload-img">
-            <img src="images/upload.png">
-        </div>
-
-        <table class="file-table">
-            <thead>
-                <tr>
-                    <th></th>
-                    <th>name</th>
-                    <th></th>
-                    <th>size</th>
-                    <th></th>
-                    <th>last modified</th>
-                    <th></th>
-                    <th>type</th>
-                </tr>
-                <tr class="file-table-leer"></tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>file1.pdf</td>
-                    <td></td>
-                    <td>100KB</td>
-                    <td></td>
-                    <td>13.07.2023</td>
-                    <td></td>
-                    <td>PDF-Document</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>file2.pdf</td>
-                    <td></td>
-                    <td>30KB</td>
-                    <td></td>
-                    <td>20.05.2023</td>
-                    <td></td>
-                    <td>PDF-Dokument</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td>folder1</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td>07.08.2023</td>
-                    <td></td>
-                    <td>Folder</td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </body>
 </html>
